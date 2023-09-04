@@ -1,0 +1,68 @@
+[data-theme="light"] {
+  --bg: white;
+  --text: black;
+  --headerbg: black;
+  --title: white;
+  --link: violet;
+}
+
+[data-theme="dark"] {
+  --bg: black;
+  --text: white;
+  --headerbg: white;
+  --title: black;
+  --link: red;
+}
+
+[data-theme="barbie"] {
+  --bg: lightpink;
+  --text: hotpink;
+  --headerbg: hotpink;
+  --title: lightpink;
+  --link: rgb(174, 9, 125);
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--headerbg);
+  padding: 2rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  margin-top: auto;
+  background-color: var(--headerbg);
+  padding: 2rem;
+}
+
+div {
+  display: flex;
+  gap: 1rem;
+}
+
+h1,
+p {
+  color: var(--title);
+}
+
+a {
+  color: var(--link);
+}
